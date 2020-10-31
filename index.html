@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Portfolio</title>
+  <!-- CSS file -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- Fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- Works scroller -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!-- JQuery link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Works scroller -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- JS file -->
+  <!-- <script src="main.js"></script> -->
+</head>
+<body>
+  <style type="text/css">
+    *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+}
+
+
+p {
+  line-height: 1.8;
+}
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: #48dbfb60;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #353b48;
+}
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+}
+
+.inner-width{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 44px;
+  height: 32px;
+  background-image: url(white-logo.png);
+  background-size: contain;
+}
+
+.menu-toggler{
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+
+.navbar-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+  color: #48dbfb !important;
+}
+
+.sticky{
+  background-color: #fff;
+  padding: 18px 0;
+}
+
+.sticky .logo{
+  background-image: url(black-logo.png);
+}
+
+.sticky .navbar-menu a{
+  color: #111;
+}
+
+.sticky .menu-toggler span{
+  background-color: #111;
+}
+
+.bg__top {
+  background: url(mini-profile-bg-01.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home{
+  height: 100vh;
+  min-height: 500px;
+}
+
+#home .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+}
+
+#home .inner-width .content {
+  background-color: rgba(0,0,0,0.5);
+  padding: 100px 50px;
+  color: #fff;
+}
+
+#home .inner-width .content h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+
+#home .inner-width .content h5 {
+  font-size: 20px;
+}
+section{
+  padding: 100px 0;
+}
+#about {
+  margin: 100px 0;
+  padding: 0;
+  background-color: rgba(255,255,255,0.7);
+}
+
+#about .inner-width {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+}
+.about__text {
+  width: calc(66% - 20px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about__text p {
+  padding-right:  20px;
+}
+.about__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f1f1f1;
+  cursor: pointer;
+  height: 400px;
+  width: calc(33% - 20px);
+  background-color: #cc6733;
+
+}
+
+#services {
+  padding: 50px 0;
+  background-color: ##F8F7E5;
+}
+
+
+/**
+
+Mini Profile Template
+
+https://templatemo.com/tm-530-mini-profile
+
+
+Color Codes
+------------
+brown: #986665;
+green: #98cb00;
+orange: #cc6733;
+blue: #3398cc;
+dark-gray: #676767;
+light-gray: #999999;
+text-gray: #6b6b6b;
+
+*/
+
+
+#services .inner-width {
+  margin: 0 auto;
+}
+.service__boxes:nth-child(1) {
+  background-color: #98cb00;
+}
+
+.service__boxes:nth-child(2) {
+  background-color: #cc6733;
+}
+
+
+.service__boxes:nth-child(3) {
+  background-color: #3398cc;
+}
+
+.service__boxes:nth-child(4) {
+  background-color: #999999;
+}
+
+
+.service__boxes {
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  align-items: center;
+}
+.service__boxes_color {
+  border-radius:6px;
+  margin: 15px;
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.person_name {
+  opacity: 0;
+}
+
+.service__boxes_color h4 {
+  padding: 5px;
+  color: #fff;
+}
+.service_first {
+  background: url(first_person.jfif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service_first:hover .person_name{
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+
+.service_second:hover .person_name{
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+
+.service_third:hover .person_name{
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+
+.service_fourth:hover .person_name{
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+.service__text {
+  color: #434343;
+  padding-left: 30px;
+}
+
+.service__text h4 {
+  padding-bottom: 40px;
+  font-size: 28px;
+}
+.service_second {
+  background: url(second_person.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.service_third {
+  background: url(third_person.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.service_fourth {
+  background: url(forth_person.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.educatoin__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education__block{
+  width: calc(33% - 20px);
+  text-align: center;
+  border: 1px solid #48dbfb;
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+
+.education__block p {
+  padding-top: 20px;
+  color: #000;
+}
+
+.education__block:hover{
+  background-color: #48dbfb;
+}
+
+.education__block:hover span{
+  color: #fff;
+}
+
+.education__block:hover p {
+ color: #fff; 
+}
+
+#works {
+  background-color: #353b48;
+}
+
+.work{
+  width: calc(25% - 10px);
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.work img{
+  width: 100%;
+  height: 100%;
+  transition: .4s linear;
+}
+
+.work::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #48dbfbcc;
+  transition: .2s linear;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.work .info{
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  transition: .4s linear;
+  opacity: 0;
+}
+
+.work:hover img{
+  transform: scale(1.6) rotate(25deg);
+}
+
+.work:hover::before,
+.work:hover .info
+{
+  opacity: 1;
+  transform: scale(1);
+}
+
+#contact {
+  background: url(mini-profile-bg-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.works{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.send_block {
+  width: 460px;
+  height: 100%;
+  background-color: rgba(256,256,256,0.8);
+}
+
+form {
+  width: 420px;
+  padding:50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.inp_name {
+  width: 360px;
+  height: 40px;
+  background-color: rgba(0,0,0,0);
+  margin-bottom: 30px;
+}
+
+
+
+.inp_name input{
+  width: 360px;
+  height: 40px;
+  font-size: 18px;
+  border:none;
+  border-bottom: 1px solid #6b6b6b;
+  background-color: rgba(0,0,0,0);
+}
+.inp_email {
+  margin-bottom: 30px;
+  width: 360px;
+  height: 40px;
+  background-color: rgba(0,0,0,0);
+}
+
+
+.inp_email input{
+  width: 360px;
+  height: 40px;
+  font-size: 18px;
+  border:none;
+  border-bottom: 1px solid #6b6b6b;
+  background-color: rgba(0,0,0,0);
+}
+
+
+.text_area {
+  margin-bottom: 30px;
+  width: 360px;
+}
+
+.text_area textarea {
+  font-size: 18px;
+  resize: vertical;
+  width: 360px;
+  max-height: 130px;
+  border:none;
+  border-bottom: 1px solid #6b6b6b;
+  background-color: rgba(0,0,0,0);
+}
+.btn {
+  width: 126px;
+  height: 56px;
+  border:none;
+  background-color: #999999;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  width: 126px;
+  height: 56px;
+  border:none;
+  background-color: #7B7878;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+input:focus {
+  outline: 3px solid rgba(34,162,228,0.4);
+  border-bottom: 1px solid rgba(34,162,255,1);
+} 
+textarea:focus {
+  outline: 3px solid rgba(34,162,228,0.4);
+  border-bottom: 1px solid rgba(34,162,255,1);
+}
+
+
+footer{
+  background-color: #353b48;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.copyright{
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
+.navbar-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+  color: #48dbfb !important;
+}
+
+
+.copyright a{
+  font-size: 16px;
+  color: #48dbfb;
+  font-weight: 500;
+}
+
+.sm a {
+  font-size: 22px;
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 500; 
+}
+.sm a:hover {
+  color: #48dbfb !important;
+}
+
+
+@media (max-width: 1054px) {
+
+}
+
+@media (max-width: 991px) {
+  #about .inner-width {
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__text {
+    text-align: justify;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: calc(90% - 20px);
+  }
+  .about__block {
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    order: -9;
+    height: 120px;
+    width: calc(90% - 20px);
+  }
+
+  .about__block span i {
+    font-size: 42px;
+  }
+
+  .service__boxes {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+    align-items: center;
+  }
+
+  .service__text {
+    padding-right: 30px;
+  }
+  .service__text h4 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .service__text p {
+    text-align: justify;
+    font-size: 16px;
+    padding-bottom:5px;
+  }
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #f1f1f1;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+
+  .educatoin__container {
+    justify-content: space-evenly;
+  }
+  .education__block{
+    width: calc(50% - 20px);
+  }
+  .work{
+    width: calc(50% - 10px);
+  }
+}
+
+/*@media (max-width: 730px) {
+
+  }*/
+  
+  @media (max-width: 572px) {
+    .send_block {
+      padding:0;
+      margin: 0;
+      width: calc(100% - 10px);
+      margin: 0 auto;
+      height: 100%;
+      background-color: rgba(256,256,256,0.8);
+    }
+
+    form {
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .inp_name {
+      width: calc(90% - 10px);
+      height: 40px;
+      background-color: rgba(0,0,0,0);
+      margin-bottom: 30px;
+    }
+
+
+
+    .inp_name input{
+      width: calc(90% - 10px);
+      height: 40px;
+      font-size: 18px;
+      border:none;
+      border-bottom: 1px solid #6b6b6b;
+      background-color: rgba(0,0,0,0);
+    }
+    .inp_email {
+      margin-bottom: 30px;
+      width: calc(90% - 10px);
+      height: 40px;
+      background-color: rgba(0,0,0,0);
+    }
+
+
+    .inp_email input{
+      width: calc(90% - 10px);
+      height: 40px;
+      font-size: 18px;
+      border:none;
+      border-bottom: 1px solid #6b6b6b;
+      background-color: rgba(0,0,0,0);
+    }
+
+
+    .text_area {
+      margin-bottom: 30px;
+      width: calc(90% - 10px);
+    }
+
+    .text_area textarea {
+      font-size: 18px;
+      resize: vertical;
+      width: calc(90% - 10px);
+      max-height: 130px;
+      border:none;
+      border-bottom: 1px solid #6b6b6b;
+      background-color: rgba(0,0,0,0);
+    }
+    .btn {
+      width: 126px;
+      height: 56px;
+      border:none;
+      background-color: #999999;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      width: 126px;
+      height: 56px;
+      border:none;
+      background-color: #7B7878;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fff;
+    }
+
+
+    input:focus {
+      outline: 3px solid rgba(34,162,228,0.4);
+      border-bottom: 1px solid rgba(34,162,255,1);
+    } 
+    textarea:focus {
+      outline: 3px solid rgba(34,162,228,0.4);
+      border-bottom: 1px solid rgba(34,162,255,1);
+    }
+
+
+    .education__block{
+      width: 100%;
+    }
+
+    .work{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .education__block{
+      width: 100%;
+    }
+
+    .work{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 443px) {
+    .education__block{
+      width: 100%;
+    }
+
+    .work{
+      width: 100%;
+    }
+  }
+
+  </style>
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="/" class="logo"></a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="bg__top">
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Team Portfolio</h1>
+          <h5>just cool sites</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="inner-width">
+        <div class="about__text">
+          <h2>Welcome to our Portfolio</h2>
+          <p>In this portfolio, you can get acquainted with our friends and colleagues, and their capabilities and skills for creating websites, and you can contact them by clicking on their portfolio.Good surfing in our portfolio.</p>
+        </div>
+        <a class="about__block" href="#">
+          <span><i class="fas fa-4x fa-address-card p-3"></i></span>
+          <p>Go to our works by clicking here</p>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <section id="education">
+    <div class="inner-width">
+      <div class="service__boxes">
+        <div class="service__boxes_color service_first">
+          <h4 class="person_name">Russel Laurencia</h4>
+          <h4>Project Manager</h4>
+        </div>
+        <div class="service__text">
+          <h4>New Company (2019 January to Present)</h4>
+          <p>works from 2012 in this specializtion and he saw web desing progress</p>
+        </div>
+      </div>
+
+      <div class="service__boxes">
+        <div class="service__boxes_color service_second">
+          <h4 class="person_name">Julia Lowe</h4>
+          <h4>Senior UX Designer</h4>
+        </div>
+        <div class="service__text">
+          <h4>Studio One (2017 April to 2018 Dec)</h4>
+          <p>works from 2012 in this specializtion and he saw web desing progress</p>
+        </div>
+      </div>
+
+      <div class="service__boxes">
+        <div class="service__boxes_color service_third">
+          <h4 class="person_name">Siposs Gabor</h4>
+          <h4>Graphic Designer</h4>
+        </div>
+        <div class="service__text">
+          <h4>Digital Com (2015 Jan to 2016 Dec)</h4>
+          <p>works from 2012 in this specializtion and he saw web desing progress</p>
+        </div>
+      </div>
+
+      <div class="service__boxes">
+        <div class="service__boxes_color service_fourth">
+          <h4 class="person_name">Guang Shen</h4>
+          <h4>Design School</h4>
+        </div>
+        <div class="service__text">
+          <h4>Art Design College (2012 May to 2014 Dec)</h4>
+          <p>works from 2012 in this specializtion and he saw web desing progress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="inner-width">
+      <div class="educatoin__container">
+        <div class="education__block">
+          <span class="fas fa-5x fa-briefcase"></span>
+          <p>Fast and high-quality work and, fast and high-quality website</p>
+        </div>
+        <div class="education__block">
+          <span class="fas fa-5x fa-balance-scale"></span>
+          <p>Balanced design with convenience</p>
+        </div>
+        <div class="education__block">
+          <span class="fas fa-5x fa-building"></span>
+          <p>Our office is located at Jeltoqsan street 17, Shymkent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="works">
+    <div class="inner-width">
+      <div class="works">
+        <a href="images/works/first_work.jpg" class="work">
+          <img src="images/works/first_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/second_work.jpg" class="work">
+          <img src="images/works/second_work.jpg" width="400" height="300" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/third_work.jpg" class="work">
+          <img src="images/works/third_work.jpg" width="400" height="300" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/fourth_work.jpg" class="work">
+          <img src="images/works/fourth_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/fiveth_work.jpg" class="work">
+          <img src="images/works/fiveth_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/sixth_work.jpg" class="work">
+          <img src="images/works/sixth_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/seventh_work.jpg" class="work">
+          <img src="images/works/seventh_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/eighth_work.jpg" class="work">
+          <img src="images/works/eighth_work.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="inner-width">
+      <div class="send_block">
+        <form action="#">
+          <div class="inp_name">
+            <input type="text" placeholder="Name" >
+          </div>
+          <div class="inp_email">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="text_area">
+            <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>    
+    </div>
+  </section>
+  <footer>
+    <div class="inner-width">
+      <div class="copyright">
+        &copy; 2020 | Created & Designed By <a href="#">Adilkhan</a>
+      </div>
+      <div class="sm">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".works").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{enabled:true}
+      });
+      $(window).scroll(function(){
+        if(this.scrollY > 20){
+          $(".navbar").addClass("sticky");
+        }
+        else{
+          $(".navbar").removeClass("sticky");
+        }
+      });
+      $('.menu-toggler').click(function(){
+        $(this).toggleClass("active");
+        $(".navbar-menu").toggleClass("active");
+      });
+    });
+  </script>
+</body>
+</html>
